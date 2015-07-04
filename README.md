@@ -1,21 +1,63 @@
-Jekyll Themes
-=============
+# Jekyll Incorporated
+Modern Jekyll based blog. Great for companies, products or anything. See live at [blog.sendtoinc.com](http://blog.sendtoinc.com)
 
-A directory of the best-looking themes for Jekyll blogs
+## Installation & Usage
+    bundle install
+    jekyll serve --watch
 
+_Note: Requires Ruby version 1.9.3 =>. For example use [rbenv](https://github.com/sstephenson/rbenv)_   
+    
+## Configuration
+Edit: _config.yml (general options), main.css (theme colors &amp; fonts)
 
-Submitting a Theme
-------------------
+```
+jekyll-incorporated/
+├── _config.yml
+├── _assets/
+    ├── stylesheets/
+        ├── main.scss
+```
 
-Have a theme you want to share?
+_Note: when editing _config.yml, you need to restart jekyll to see the changes.__
 
-* Fork the site on GitHub
-* Create a new post in the `_posts` directory and fill out the relevant YAML fields
-* Make a 250x200 thumbnail and drop it int the thumbnails directory. List its filename in the post's markdown file.
-* Test it out, then push your changes up and open a pull request.
+    
+## Publish to Github Pages
+1. Add your domain to _CNAME_
+2. Edit your repo address at _Rakefile_
+    
+Run rake task. **NOTE: It will deploy the generated site to _gh-pages_ branch overwriting it**    
+``` 
+rake site:publish
+```
 
+## Usage examples
 
-License
--------
+* Adroll Engineering http://tech.adroll.com/
+* Brace.io blog http://blog.brace.io/
+* Spark.io blog http://blog.spark.io/
+* Department of Better Technology http://blog.dobt.co/
 
-The contents of this repository are licensed under the [GNU Public License.](http://www.gnu.org/licenses/gpl-3.0.html)
+## Authors
+
+Originally build for [sendtoinc.com](https://sendtoinc.com), your workspace for sharing and organizing knowledge
+
+**Karri Saarinen**
+
++ [http://twitter.com/karrisaarinen](http://twitter.com/karrisaarinen)
++ [http://github.com/ksaa](http://github.com/ksaa)
+
+**Jori Lallo**
+
++ [http://twitter.com/jorilallo](http://twitter.com/jorilallo)
++ [http://github.com/jorde](http://github.com/jorilallo)
+
+## Todo:
+
++ Documentation
++ Less config files
++ Better deploy scripts
+
+## Copyright and license
+
+Copyright 2013 Kippt Inc. under [The MIT License ](LICENSE)
+
